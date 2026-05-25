@@ -1,0 +1,3 @@
+VIP Emails: Array(8)0: "alice@mail.com"1: "charlie@mail.com"2: "eve@mail.com"3: "ivan@mail.com"4: "mallory@mail.com"5: "robin@mail.com"6: "sybil@mail.com"7: "victor@mail.com"length: 8[[Prototype]]: Array(0)
+array_refactor.js:63 Total VIP Revenue: 4000
+index.html:31 Live reload enabled.
