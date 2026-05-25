@@ -1,0 +1,53 @@
+--- TRẠNG THÁI BAN ĐẦU ---
+app.js:37 Sơ đồ ghế ban đầu:
+app.js:38 
+(index)
+0
+1
+2
+3
+4
+0	0	1	0	0	1
+1	1	0	1	0	0
+2	0	0	0	1	0
+Array(3)
+app.js:39 Danh sách chờ ban đầu: 
+(3) ['An', 'Bình', 'Châm']
+app.js:40 
+-----------------------------------------------
+app.js:42 --- BẮT ĐẦU CHẠY CÁC TEST CASE ---
+app.js:46 [Test 1] Đặt ghế trống (0, 2):
+app.js:19 Đặt ghế thành công tại vị trí: Hàng 0 - Cột 2
+app.js:52 
+[Test 2] Đặt ghế đã có người (1, 0):
+app.js:21 Ghế tại vị trí (1, 0) đã được đặt!
+app.js:57 
+[Test 3] Thêm khách mới vào danh sách chờ:
+app.js:32 Đã thêm khách hàng "Dũng" vào danh sách chờ.
+app.js:63 
+[Test 4] Lỗi Index Out of Bounds (Hàng 5 không tồn tại):
+app.js:13 Vị trí ghế (5, 1) không tồn tại!
+app.js:69 
+[Test 5] Lỗi Index Out of Bounds (Cột 9 không tồn tại):
+app.js:13 Vị trí ghế (2, 9) không tồn tại!
+app.js:74 
+[Test 6] Lỗi Index Out of Bounds (Chỉ số âm -1):
+app.js:13 Vị trí ghế (-1, 3) không tồn tại!
+app.js:78 
+-----------------------------------------------
+app.js:79 --- TRẠNG THÁI SAU KHI TEST ---
+app.js:80 Sơ đồ ghế hiện tại (Ghế 0,2 đã chuyển từ 0 sang 1):
+app.js:81 
+(index)
+0
+1
+2
+3
+4
+0	0	1	1	0	1
+1	1	0	1	0	0
+2	0	0	0	1	0
+Array(3)
+app.js:82 Danh sách chờ hiện tại (Đã thêm Dũng): 
+(4) ['An', 'Bình', 'Châm', 'Dũng']
+﻿
