@@ -1,0 +1,33 @@
+<body>
+
+    <div class="container">
+        <h2>Từ điển Anh - Việt</h2>
+        <input type="text" id="englishWord" placeholder="Nhập từ tiếng Anh cần tìm...">
+        <button onclick="translateWord()">Tìm kiếm</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const englishArray = ["hello", "banana", "computer", "apple", "cat", "dog"];
+        const vietnameseArray = ["xin chào", "quả chuối", "máy tính", "quả táo", "con mèo", "con chó"];
+
+        function translateWord() {
+            const search = document.getElementById('englishWord').value.trim().toLowerCase();
+            const result = document.getElementById('result');
+
+            if (search === "") {
+                result.innerHTML = "Vui lòng nhập từ cần tìm!";
+                return;
+            }
+
+            const index = englishArray.indexOf(search);
+
+            if (index !== -1) {
+                result.innerHTML = `Nghĩa là: ${vietnameseArray[index]}`;
+            } else {
+                result.innerHTML = "Không tìm thấy!";
+            }
+        }
+    </script>
+</body>
