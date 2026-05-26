@@ -1,0 +1,34 @@
+<body>
+    <h3>Hoán đổi chữ hoa thường</h3>
+    <input type="text" id="textInput" placeholder="Nhập dãy số...">
+    <button onclick="hoanDoi()">Hoán đổi</button>
+
+    <div id="result"></div>
+    <script>
+        let ketQua = document.getElementById('result');
+
+        let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+
+        function hoanDoi() {
+            let str = document.getElementById('textInput').value;
+
+            let mangKetQua = [];
+
+            for (let x = 0; x < str.length; x++) {
+                if (UPPER.indexOf(str[x]) !== -1) {
+                    mangKetQua.push(str[x].toLowerCase());
+                }
+                else if (LOWER.indexOf(str[x]) !== -1) {
+                    mangKetQua.push(str[x].toUpperCase());
+                }
+                else {
+                    mangKetQua.push(str[x]);
+                }
+            }
+            ketQua.innerHTML = "Kết quả sau hoán đổi: " + mangKetQua.join('');
+
+        }
+
+    </script>
+</body>

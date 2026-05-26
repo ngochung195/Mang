@@ -1,0 +1,15 @@
+<body>
+    <h3>Nối các phần tử trong mảng thành chuỗi</h3>
+    <p id="chuoibd"></p>
+    <p id="chuoiNoi"></p>
+    <script>
+        let bd = document.getElementById('chuoibd');
+        let noi = document.getElementById('chuoiNoi');
+
+        let myColor = ["Red", "Green", "White", "Black"];
+        bd.innerHTML = "Mang ban đầu: " + JSON.stringify(myColor);
+
+        noi.innerHTML = "Chuỗi sau khi nối: " + myColor.join(',');
+
+    </script>
+</body>

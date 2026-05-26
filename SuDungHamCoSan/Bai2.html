@@ -1,0 +1,33 @@
+<body>
+    <h3>Chèn dấu gạch</h3>
+    <input type="number" id="numberInput" placeholder="Nhập dãy số...">
+    <button onclick="chenDauGach()">Chèn</button>
+
+    <div id="result"></div>
+    <script>
+        let ketQua = document.getElementById('result');
+
+        function chenDauGach() {
+            let chuoiSo = document.getElementById('numberInput').value;
+
+            let mangSo = chuoiSo.split('');
+            let mangKetQua = [];
+
+            for (let i = 0; i < mangSo.length; i++) {
+                mangKetQua.push(mangSo[i]);
+
+                if (i + 1 < mangSo.length) {
+                    soHienTai = Number(mangSo[i]);
+                    soTiepTheo = Number(mangSo[i + 1]);
+
+                    if (soHienTai % 2 === 0 && soTiepTheo % 2 === 0) {
+                        mangKetQua.push('-');
+                    }
+                }
+            }
+
+            ketQua.innerHTML = "Chuỗi sau thay đổi: " + mangKetQua.join('');
+        }
+
+    </script>
+</body>
