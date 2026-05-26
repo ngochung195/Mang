@@ -1,0 +1,1 @@
+Prompt 1: Cho tôi ít nhất 3 kịch bản: Mảng chuẩn, Mảng rỗng, và Mảng chứa dữ liệu dị thường để test hệ thống
