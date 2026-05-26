@@ -1,0 +1,20 @@
+<body>
+    <script>
+        function demSoTu(chuoi) {
+            let chuoiChuanHoa = chuoi.trim();
+
+            if (chuoiChuanHoa === "") {
+                return 0;
+            }
+
+            let danhSachTu = chuoiChuanHoa.split(/ +/);
+
+            return danhSachTu.length;
+        }
+
+        let doanVan = "  Học   lập trình   JavaScript   rất thú vị!  ";
+
+        console.log("Chuỗi ban đầu:", `"${doanVan}"`);
+        console.log("Số từ trong chuỗi là:", demSoTu(doanVan));
+    </script>
+</body>

@@ -1,0 +1,18 @@
+<body>
+    <script>
+        let charArray = ['a', '5', 'b', '2', '8', 'g', '0', 'x', '9', '$'];
+
+        let arrayLength = charArray.length;
+        console.log(`Kích thước của mảng là: ${arrayLength}`);
+
+        let count = 0;
+
+        for (let i = 0; i < arrayLength; i++) {
+            if (charArray[i] >= '0' && charArray[i] <= '9') {
+                count++;
+            }
+        }
+
+        console.log(`Số lượng ký tự số (0-9) trong mảng là: ${count}`);
+    </script>
+</body>

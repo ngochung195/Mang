@@ -1,0 +1,22 @@
+<body>
+    <script>
+        function kiemTraGiongNhau(chuoi1, chuoi2) {
+            if (chuoi1 === chuoi2) {
+                return "Hai chuỗi giống nhau hoàn toàn.";
+            } else {
+                return "Hai chuỗi khác nhau.";
+            }
+        }
+
+        let strA = "Hello World";
+        let strB = "Hello World";
+        let strC = "hello world";
+
+        console.log("Trường hợp 1 (strA và strB):");
+        console.log(`"${strA}" VS "${strB}" ->`, kiemTraGiongNhau(strA, strB));
+
+        console.log("\nTrường hợp 2 (strA và strC):");
+        console.log(`"${strA}" VS "${strC}" ->`, kiemTraGiongNhau(strA, strC));
+
+    </script>
+</body>

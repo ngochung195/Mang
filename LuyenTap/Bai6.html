@@ -1,0 +1,16 @@
+<body>
+    <script>
+        let charArray = ['a', '-', 'b', 'c', '-', 'd', '-', 'e'];
+
+        console.log("Mảng trước khi thay thế:", charArray);
+
+        for (let i = 0; i < charArray.length; i++) {
+            // Nếu phần tử tại vị trí i là '-', thay thế bằng '_'
+            if (charArray[i] === '-') {
+                charArray[i] = '_';
+            }
+        }
+
+        console.log("Mảng sau khi thay thế :", charArray);
+    </script>
+</body>
